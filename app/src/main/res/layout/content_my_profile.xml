@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_my_profile"
+        tools:context=".MyProfile">
+    <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:src="@drawable/mimi"
+    android:layout_margin="@dimen/fab_margin"
+            android:id="@+id/img_profile"
+
+    app:layout_constraintTop_toTopOf="parent"/>
+<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+app:layout_constraintTop_toBottomOf="@id/img_profile"
+android:text="Oscar Muigai"
+        android:id="@+id/txtname"
+android:textAlignment="center"/>
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+          android:background="@android:color/darker_gray"
+          android:layout_margin="@dimen/fab_margin"
+    app:layout_constraintTop_toBottomOf="@id/txtname"
+    android:id="@+id/view"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    android:id="@+id/txtTrack"
+    android:text="Track: \t Android"
+            android:layout_margin="@dimen/fab_margin"
+    app:layout_constraintTop_toBottomOf="@id/view"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCountry"
+            android:text="Country: \t Kenya"
+            android:layout_margin="@dimen/fab_margin"
+            app:layout_constraintTop_toBottomOf="@id/txtTrack"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtemail"
+            android:text="Email: \t oscarmjeri@gmail.com"
+            android:layout_margin="@dimen/fab_margin"
+            app:layout_constraintTop_toBottomOf="@id/txtCountry"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtphone"
+            android:text="Phone number: \t 254708396044"
+            android:layout_margin="@dimen/fab_margin"
+            app:layout_constraintTop_toBottomOf="@id/txtemail"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSlackname"
+            android:text="Slack Username: \t @oscarM"
+            android:layout_margin="@dimen/fab_margin"
+            app:layout_constraintTop_toBottomOf="@id/txtphone"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
